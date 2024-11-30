@@ -40,7 +40,7 @@ ShouldAvoid() : 몬스터의 체력과 플레이어와의 거리를 Defuzzify()�
 
   </tr>
   <tr>
-    <td><img src="asset/FuzzyAvoid.jpg" width="300" height="300"></td>
+    <td><img src="asset/FuzzyAvoid.png" width="300" height="300"></td>
     <td><img src="asset/FuzzyAttack.jpg" width="300" height="300"></td>
 
   </tr>
