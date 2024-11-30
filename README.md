@@ -20,7 +20,7 @@ GetMembership() : membership 값을 반환
 
 GetCentroid() : 반환된 멤버십 값의 centroid 값을 계산  
 
-입력된 값에 대한 퍼지 집합의 membership 값을 계산하여 퍼지 규칙을 평가하고 행동을 결정함
+> 입력된 값에 대한 퍼지 집합의 membership 값을 계산하여 퍼지 규칙을 평가하고 행동을 결정함
 
 
 ## Boss.cs
@@ -41,8 +41,15 @@ ShouldAvoid() : 몬스터의 체력과 플레이어와의 거리를 Defuzzify()�
   </tr>
   <tr>
     <td><img src="asset/FuzzyAvoid.png" width="300" height="300"></td>
-    <td><img src="asset/FuzzyAttack.jpg" width="300" height="300"></td>
+    <td><img src="asset/FuzzyAttack.png" width="300" height="300"></td>
 
   </tr>
 </table>
 
+FuzzyLogic-Avoid  
+설정해 놓은 집합 중 가장 높은 가중치를 갖는 값(체력 30% 미만)으로 설정하여 회피하는지 확인  
+> Evasion Probability : 0.9 (90% 확률로 회피)
+
+FuzzyLogic-Attack
+몬스터가 공격할 준비가 되었는지(쿨타임), 플레이어의 상태 (공격, 이동 중인지)를 계산하여  
+attackProbability 값이 Random.value 값보다 높을 경우 패턴 실행
